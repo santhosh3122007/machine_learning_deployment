@@ -1,5 +1,6 @@
 from flask import Flask, request, jsonify
-import reimport joblib
+import re
+import joblib
 app = Flask(__name__)
 # Load the SVC model
 svc_model = joblib.load('/content/svc_model.joblib')
